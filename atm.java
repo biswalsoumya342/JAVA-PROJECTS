@@ -97,19 +97,23 @@ class ATM{
         option = sc4.nextInt();
         if(option==1){
             checkBalance();
+            repeat();
         } else if (option==2) {
             withdrawBalance();
+            repeat();
         } else if (option==3) {
             depositeBalance();
+            repeat();
         } else if (option==4) {
             changePin();
+            repeat();
         } else if (option==5) {
             exit();
         }else {
             System.out.println("Wrong Input! Please Try Again Later");
             menu();
         }
-        repeat();
+        
     }
 }
 public class atm{
