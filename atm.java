@@ -3,6 +3,9 @@ import java.util.Scanner;
 class ATM{
     int pin =1234,currentBalance=1000,enteredPin,newPin,option,withdraw,deposite;
     int choice;
+    ATM(){
+        menu();
+    }
     void repeat(){
         System.out.println("Do You Want To Proceed Further? 1-YES , 2-No");
         Scanner sc3 = new Scanner(System.in);
@@ -113,12 +116,10 @@ class ATM{
             System.out.println("Wrong Input! Please Try Again Later");
             menu();
         }
-        
     }
 }
 public class atm{
     public static void main(String args[]){
         ATM obj = new ATM();
-        obj.menu();
     }
 }
