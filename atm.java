@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class ATM{
-    int pin =0601,currentBalance=1000,enteredPin,newPin,option,withdraw,deposite;
+    int pin =1234,currentBalance=1000,enteredPin,newPin,option,withdraw,deposite;
     int choice;
     ATM(){
         menu();
